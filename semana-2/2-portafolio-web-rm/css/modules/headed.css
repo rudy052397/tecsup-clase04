@@ -1,0 +1,23 @@
+.header {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--primary-theme-color);
+	border-bottom: 0.125rem solid var(--reverse-primary-shadow-color);
+}
+
+.nav{
+	padding: 1rem 0;
+}
+.nav__logo{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: block;
+}
+.footer{
+	
+	border-top: 0.125rem solid var(--reverse-primary-shadow-color);
+}
