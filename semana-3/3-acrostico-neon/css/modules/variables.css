@@ -1,0 +1,23 @@
+
+:root {
+  scroll-behavior: smooth;
+  --primary-theme-color: #20232a;
+  --secondary-theme-color: #282c34;
+  --primary-text-color: #fff;
+  --primary-highlight-color: #61dafb;
+  --primary-font-family: 'Montserrat', sans-serif;
+  --padding-section: 1.5rem;
+  --padding-container: 1rem;
+  --max-width-container: 640px;
+  --letter-color-1:#e44f26;
+  --letter-color-2:#264DE4;
+  --letter-color-3:#F1DC50;
+  --letter-color-4:#00D8FF;
+}
+@media (min-width: 768px) {
+  :root {
+    --padding-section: 2rem;
+    --padding-container: 0.75rem;
+    --max-width-container: 1024px;
+  }
+}

@@ -1,0 +1,7 @@
+.hero {
+  @include d-flex-fd-ai-jc-g(row, center, flex-start, 0);
+  background-image: url('../../../../assets/img/background-cloud.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}

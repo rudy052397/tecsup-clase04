@@ -1,0 +1,101 @@
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  box-sizing: border-box;
+}
+
+.section--hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(171, 226, 255);
+  background: linear-gradient(0deg, rgba(171, 226, 255, 1) 12%, rgba(124, 217, 255, 1) 25%, rgba(239, 251, 249, 1) 39%, rgba(229, 255, 254, 1) 43%, rgba(158, 123, 123, 1) 44%, rgba(14, 0, 43, 1) 46%, rgba(14, 0, 41, 1) 49%, rgba(32, 0, 108, 1) 100%, rgba(125, 78, 255, 1) 100%, rgba(159, 124, 255, 1) 108%);
+  /* background-image: radial-gradient(var(--primary-theme-color), var(--secondary-theme-color)); */
+  min-height: 100vh;
+}
+
+.section__link {
+  animation: zoom 1s ease-in-out 0s infinite alternate;
+}
+
+.section__link--hero {
+  display: flex;
+  gap: 0.25rem;
+  color: var(--primary-text-color);
+  font-weight: 800;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.section__link-letter {
+  position: relative;
+  text-shadow: 0 0 0.5rem var(--primary-highlight-color);
+}
+
+.section__link-letter:nth-child(1) {
+  color: var(--letter-color-1);
+}
+
+.section__link-letter:nth-child(2) {
+  color: var(--letter-color-2);
+}
+
+.section__link-letter:nth-child(3) {
+  color: var(--letter-color-3);
+}
+
+.section__link-letter:nth-child(4) {
+  color: var(--letter-color-4);
+}
+
+.section__link-letter::before {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transform: scale(1.125) rotateX(137deg);
+  content: var(--letter);
+  filter: blur(0.125rem);
+}
+
+.section__link-letter:hover {
+  filter: brightness(2.5);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.section__stanza {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__verse {
+  font-weight: 600;
+  text-shadow: 0 0 0.0625rem var(--primary-highlight-color),
+    0 0 0.125rem var(--primary-highlight-color),
+    0 0 0.25rem var(--primary-highlight-color);
+}
+.section__verse::first-letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .section__link--hero{
+    font-size: 6rem;
+  }
+  .section__verse{
+    font-size: 1.5rem;
+  }
+  .section__verse::first-letter{
+    font-size: 2rem;
+  }
+}

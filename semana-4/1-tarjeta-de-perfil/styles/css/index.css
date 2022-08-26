@@ -1,0 +1,17 @@
+@import './style.css';
+:root {
+  --primary-theme-color: #20232abf;
+  --secondary-theme-color: #282c34bf;
+  --primary-text-color: #fff;
+  --primary-highlight-color: #61dafb;
+  --secondary-highlight-color: gold;
+}
+
+.body {
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+}
+
+
